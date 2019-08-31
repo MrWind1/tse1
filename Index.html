@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TSE 2019</title>
+
+  <!-- Bootstrap CSS File  -->
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-C++cugH8+Uf86JbNOnQoBweHHAe/wVKN/mb0lTybu/NZ9sEYbd+BbbYtNpWYAsNP" crossorigin="anonymous">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+  
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-8">
+                  <h3>DETALLE DE VOTOS<span class="label label-primary"></span></h3>
+                  <!--AQUI SE CREA LA TABLA-->
+                  <table class="table-info table-bordered table-sm">
+                    <!--SE DEFINEN LOS ENCABEZADOS DE CADA COLUMNA-->
+                    <tr class="success">
+                      <th>PARTIDO POLITICO</th>
+                      <th>VOTOS</th>
+                      <th>PORCENTAJE</th>
+                    </tr>
+                    <!--ESTE ES EL CUERPO DE LA TABLA DONDE IRAN LOS DATOS DE LA API-->
+                    <!--EL ID ES UNA PARTE MUY IMPORTANTE PARA SABER A DONDE IRAN LOS DATOS DESDE LA API-->
+                    <tbody id="myTable">
+      
+                    </tbody>
+                  </table>
+
+    <table class="table-info table-bordered table-sm mt-4">
+        <tr class="success">
+          <th></th>
+          <th>VOTOS</th>
+          <th>PORCENTAJE</th>
+        </tr>
+        <tbody id="myTable2">
+        </tbody>
+      </table>
+</div>
+</div>
+</div>
+
+<div class="col-6">
+    <h3 class="text-center">VOTOS</h3>
+    <canvas id="myChart" width="400" height="300"></canvas>
+</div>
+</div>
+</div>
+
+    
+    
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </div>
+  
+  <!-- Jquery JS file -->
+  <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
+
+  <!-- Bootstrap JS file -->
+  <script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Adicionar javascript Personalizado -->
+  <script type="text/javascript" src="./JS/TSE.js"></script>
+  
+
+</body>
+
+</html>
